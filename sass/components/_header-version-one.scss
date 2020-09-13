@@ -40,15 +40,6 @@
 span {
 	color: $accent-color;
 }
-.mobile-button {
-	&:hover {
-		fill: $accent-color;
-	}
-}
-.main-nav button:focus {
-	fill: $accent-color;
-}
-
 .mobile-nav-button {
 	display: inline-block;
 
@@ -90,8 +81,7 @@ span {
 }
 .nav-link {
 	color: $main-txt-color;
-	display: inline-block;
-
+	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	font-weight: 500;

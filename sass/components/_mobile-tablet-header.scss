@@ -40,15 +40,6 @@
 span {
 	color: $accent-color;
 }
-.mobile-button {
-	&:hover {
-		fill: $accent-color;
-	}
-}
-.main-nav button:focus {
-	fill: $accent-color;
-}
-
 .mobile-nav-button {
 	display: inline-block;
 
@@ -90,8 +81,7 @@ span {
 }
 .nav-link {
 	color: $main-txt-color;
-	display: inline-block;
-
+	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	font-weight: 500;
@@ -120,7 +110,6 @@ span {
 }
 .main-contacts {
 	text-align: center;
-
 	.con-link {
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,11 +122,6 @@ span {
 		padding-bottom: 20px;
 		margin-left: auto;
 	}
-	@media screen and (min-width: 1200px) {
-		display: flex;
-		align-items: center;
-		margin-left: auto;
-	}
 
 	li {
 		@media screen and (min-width: 768px) {
@@ -145,13 +129,6 @@ span {
 			margin-bottom: 10px;
 			&:last-child {
 				margin-bottom: 0;
-			}
-			@media screen and (min-width: 1200px) {
-				margin-right: 30px;
-				margin-bottom: 0;
-				&:last-child {
-					margin-right: 0;
-				}
 			}
 		}
 		margin-bottom: 16px;
@@ -170,10 +147,6 @@ p {
 	line-height: 1.15;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-	@media screen and (min-width: 768px) {
-		display: flex;
-		align-items: center;
-	}
 
 	&:hover {
 		color: $accent-color;

@@ -23,12 +23,22 @@
 					<span>Web</span>
 					Studio
 				</a>
+	<!--mobile menu [BUTTON]-->
+	<button class="mobile-nav-button is-open" type="button" aria-expanded="false" data-menu-button>
+		<svg class="mobile-button" width="40" height="40" aria-label="кнопка открытия и закрытия мобильного меню">
+			<use class="icon-burger" href="./images/symbol-defs.svg#mobile-close-ico"></use>
+			<use class="icon-close" href="./images/symbol-defs.svg#mobile-burger-ico"></use>
+		</svg>
+	
+	</button>
+		
 				<ul class="page-nav">
 					<li><a class="nav-link active" href="">Студия</a></li>
 					<li><a class="nav-link" href="portfolio.html">Портфолио</a></li>
 					<li><a class="nav-link" href="">Контакты</a></li>
 				</ul>
 			</nav>
+			
 			<ul class="main-contacts">
 				<li>
 					<a class="con-link" href="mailto:info@devstudio.com">
@@ -46,21 +56,30 @@
 					</a>
 				</li>
 			</ul>
-
-		</div>
-
+		
+				
+					<!--mobile menu [BUTTON]-->
+					<!-- <button class="mobile-nav-button is-open" type="button" aria-expanded="false" data-menu-button> -->
+						<!-- <svg class="mobile-button" width="40" height="40" aria-label="кнопка открытия и закрытия мобильного меню">
+							<use class="icon-close"  href="./images/symbol-defs.svg#mobile-close-ico"></use>
+							<use class="icon-burger"  href="./images/symbol-defs.svg#mobile-burger-ico"></use>
+						</svg>
+						
+					</button> -->
+		
+</div>
 	</header>
 	<main>
 		<!-- hero -->
-		<section class="overlay-banner">
+		<section class="overlay-banner hidden">
 			<div class="overlay-container">
 				<h1 class="overlay">Эффективные решения<br> для вашего бизнеса</h1>
 
-				<button data-modal-open type="button">Заказать услугу</button>
+				<button class="main-button" data-modal-open type="button"  >Заказать услугу</button>
 			</div>
 		</section>
 		<!-- our-advantages-section -->
-		<section class="features-list">
+		<section class="features-list hidden">
 			<div class="container">
 				<h2 class="hidden">Наши преимущества</h2>
 				<ul class="advantages">
@@ -120,7 +139,7 @@
 			</div>
 		</section>
 		<!-- what-are-we-doing-section -->
-		<section class="what-we-do">
+		<section class="what-we-do hidden">
 			<div class="container">
 				<h2>Чем мы занимаемся</h2>
 				<ul class="inventions">
@@ -142,7 +161,7 @@
 			</div>
 		</section>
 		<!-- our-team-section -->
-		<section class="our-team">
+		<section class="our-team hidden">
 			<div class="container">
 				<h2>Наша команда</h2>
 
@@ -320,7 +339,7 @@
 			</div>
 		</section>
 		<!-- regular-customers-section -->
-		<section class="regular-customers">
+		<section class="regular-customers hidden">
 			<div class="container custom">
 				<h2>Постоянные клиенты</h2>
 				<!-- regular-customers-list -->
@@ -378,7 +397,7 @@
 		</section>
 	</main>
 	
-	<footer>
+	<footer class="hidden">
 		<div class="container footer">
 			<div class="footer-left">
 				<a class="footer-logo" href="./index.html">
@@ -442,7 +461,7 @@
 					</label>
 					<input type="email" name="mail" id="footer-mail" placeholder="E-mail" />
 
-					<button type="button">Подписаться
+					<button class="main-button" type="button">Подписаться
 						<svg class="button-icon" width="20" height="20">
 							<use href="./images/symbol-defs.svg#footer-mail-icon"></use>
 						</svg>
@@ -533,9 +552,9 @@
 	</div>
 	<!--Modal End-->
 	<!-- footer-section -->
-	<script src="./js/modal.js">
-
-	</script>
+	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
+	
 </body>
 
 </html>
